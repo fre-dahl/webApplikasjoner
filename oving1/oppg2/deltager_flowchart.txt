@@ -1,0 +1,40 @@
+
+Når eksamen "aktiveres" sender administrator ut en link via e-post til de som har gjennomført et gitt kurs. Deltakeren følger denne linken for å ta eksamen.
+ Hvis deltakeren ikke har konto fra før må den lage seg en konto med eposten de fikk eksamen tilsendt til og et passord.
+
+
+Sånn det står i oppgaven vil alle få tilsendt mail med link til eksamen siden. ikke bare de som allerede er i systemet.
+Ville kanskje endret dett. slik at alle kurs-deltagere allerede hadde en konto. og de registrerte med konto fikk automatisk tilsendt eksamen.
+Flyten ville blitt annerledes.
+
+
+
+ Trigger - Exam sent.
+
+ Follow link
+
+ Are you a user?
+
+ NO -> [make an account]
+
+ YES -> [exam page]
+
+--------------
+ make an account:
+
+ enter password.
+
+ to exam page.
+ ----------------
+
+ exam page
+
+ do Exam
+
+Exam finished?
+
+Yes -> see results
+
+pass?
+
+Yes -> get sertifikat on email and on user page.

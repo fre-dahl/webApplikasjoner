@@ -1,0 +1,16 @@
+
+Om "Sitemap".
+
+Det er egentlig 4 eller 5 sider.
+
+Log inn, Home, Edit, overview, (og exam info som kan være i overview)
+
+"manage" ligger i "Admin Home" er en og samme side.
+
+"edit" og "question" er en og samme side.
+
+Om wireframe.
+
+Fikk ikke til å lage ordentlig wireframe med et program. Tegnet ned grov skisse for hånd.
+
+

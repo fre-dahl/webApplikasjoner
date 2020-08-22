@@ -1,0 +1,77 @@
+
+Ideer / liten ufulstendig oversikt over oppgave1 idet jeg går igjennom den.
+
+Ulike personer:
+
+	Kunde: "arbeidsgiver" Vil ha en platform for bedrifter til å lage / hoste eksamener
+	Admin: en bedrift, eller personen som lager eksamen.
+	Deltager: personen som utfører eksamen. Kan være en ansatt hos bedriften.
+	
+System hvor en admin kan lage EKSAMNER (OBJ)
+En bedrift kan f.eks lage spørsmål til en kursmodul. (post i butikk?)
+
+	Kurs
+		Bedrift
+		Deltagere[]
+		
+	Eksamen
+		Admin
+		Id / navn
+		makstid (satt av admin)
+		oppgaver[] (obj)
+		minimum rette oppgaver for bestått (satt av admin)
+		
+	Oppgave (laget av admin)
+		MAX_SVAR_ALTERNATIVER = 4
+		Spørsmål (obj) (string)
+		svar alernativer[]
+		ett riktig svar alternativ.
+		
+	Deltager
+		Navn
+		Passord
+		epost
+		aktive kurs
+		gjennomførte kurs
+		
+
+
+Deltakerene som gjennomfører testen har hele tiden oversikt over hvor
+mange spørsmål som har blitt besvart og hvor mange det er igjen.
+
+	så på siden der de gjennomfører eksamen må de ha denne oversikten.
+	så ser for meg at eksamen har en "startside" og "videre til neste oppgave"
+	siden blir kasnkje autogenerert på en måte? ikke noe jeg har peil på.
+	
+Avslutningsvis får man en oversikt over resultatene fra eksamen (poengsummen) sin,
+totalt antall feil, totalt antall riktig og om man klarte testen.
+
+	Og en eksamen har en sluttside for deltageren med sluttoversikt.
+	Det er ikke spesifisert noe "gå tilbake" funskjon under eksamen.
+	men mulig å ha dette. 
+
+Administratoren skal ha mulighet til å lagre eksamen som en mal for å bruke den en annen gang.
+
+	Usikker på hva som menes med denne. Mulig klargjort senere.
+	
+Når eksamen "aktiveres" sender administrator ut en link via e-post til de som har gjennomført et gitt kurs.
+Deltakeren følger denne linken for å ta eksamen. Hvis deltakeren ikke har konto fra før må den lage seg en konto
+med eposten de fikk eksamen tilsendt til og et passord.
+
+	Så ved hjelp av en "aktivator" knapp eller timet, vil det sendes ut e-post med link til eksamen start-siden
+	til alle deltagerene med status gjennomført.
+	
+	Deltageren må ha en konto.
+	
+På en profilside kan deltakeren laste opp et bilde av seg selv, legge til navnet sitt og telefonnummer.
+Brukernavnet er eposten og kan ikke endres.
+
+	Deltager med opprettet konto har en profilside i systemet.
+	Deltager må opprette konto. ALLE eposter en unique.
+	Så iforhold til database kan dette være primary-key.
+	
+Deltakeren kan i ettertid bruke denne kontoen til å gjennomføre andre eksamener.
+De kan også se hvilke eksamener de har deltatt på og resultatet fra eksamenen.
+Om de ikke ønsker å ha kontoen lengre kan de velge å slette den.
+
+	

@@ -1,0 +1,5 @@
+Burde slått sammen admin og participant til en "user" med roller
+
+så ikke normalisert (var det hva det heter?) på noen som helst måte.
+
+men ideen er der. Tror ikke mysql har booleans..
